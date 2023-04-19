@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Entry Form</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+
+<body>
+    <form action="/createuser" method="POST">
+
+        <div class="form-group">
+            <label for="studentid">Student ID</label>
+            <input type="sid" class="form-control" id="studentid" name="studentid" aria-describedby="sidHelp" placeholder="Enter your Student ID">
+            <small id="sidHelp" class="form-text text-muted">Make sure your student id is correct.</small>
+          </div>
+        
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" class="form-control" id="firstname" name="firstname" aria-describedby="first name" placeholder="Enter your first name.">
+          <small id="firstnameHelp" class="form-text text-muted">This is your first name entry.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastname" name="lastname" aria-describedby="last name" placeholder="Enter your last name.">
+            <small id="lastnameHelp" class="form-text text-muted">This is your last name entry.</small>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="emailaddress" class="form-control" id="email" name="email" aria-describedby="emailaddressHelp" placeholder="Enter your email address">
+            <small id="emailaddressHelp" class="form-text text-muted">Your full email address.</small>
+          </div>
+        
+        <button type="submit" formaction="" class="btn btn-primary">Submit Entry</button>
+    </form>
+</body>
+
+</html>
